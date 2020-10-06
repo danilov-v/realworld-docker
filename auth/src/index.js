@@ -5,12 +5,12 @@ const { port, host, db } = require("./configuration");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("API. Hello World");
+    res.send("Auth. Hello World");
 });
 
 const startServer = () => {
     app.listen(port, () => {
-        console.log(`API is started on port: ${port}`);
+        console.log(`AUTH server is started on port: ${port}`);
         console.log(`On host: ${host}`);
         console.log(`MONGO is started on host: ${db}`);
     });
