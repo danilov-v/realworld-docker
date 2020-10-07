@@ -3,6 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+    const makeApiCall = () => {
+        console.log("api call");
+    };
+
     return (
         <div className="App">
             <header className="App-header">
@@ -18,6 +22,7 @@ function App() {
                 >
                     Learn React
                 </a>
+                <button onClick={makeApiCall}>Make api requet</button>
             </header>
         </div>
     );

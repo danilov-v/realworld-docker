@@ -5,6 +5,8 @@ services:
         command: npm run start
         stdin_open: true
         tty: true
+        ports:
+            - "3000:3000"
         volumes:
             - ./frontend/src:/usr/src/app/src
     api:
